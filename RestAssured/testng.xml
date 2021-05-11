@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="URL" value="https://www.facebook.com">
+        <test  verbose="2" preserve-order="true"
+              name="Test on Chrome">
+            <classes>
+                <class name="Test.E2E">
+                    <methods>
+                        <include name="setUp"/>
+                        <include name="pageVal"/>
+                        <include name="login"/>
+                        <include name="noticationsMessenger"/>
+                        <include name="notifications"/>
+                        <include name="shutUp"/>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+        <test  verbose="2" preserve-order="true"
+               name="Test on Opera">
+            <classes>
+                <class name="Test.E2E">
+                    <methods>
+                        <include name="setUp"/>
+                        <include name="pageVal"/>
+                        <include name="login"/>
+                        <include name="noticationsMessenger"/>
+                        <include name="notifications"/>
+                        <include name="shutUp"/>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+        <test  verbose="2" preserve-order="true"
+                      name="Test on Firefox">
+        <classes>
+            <class name="Test.E2E">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="pageVal"/>
+                    <include name="login"/>
+                    <include name="noticationsMessenger"/>
+                    <include name="notifications"/>
+                    <include name="shutUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    </parameter>
+</suite>
